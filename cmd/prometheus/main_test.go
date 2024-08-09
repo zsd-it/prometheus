@@ -60,6 +60,7 @@ func TestMain(m *testing.M) {
 	}
 
 	// On linux with a global proxy the tests will fail as the go client(http,grpc) tries to connect through the proxy.
+	// 在具有全局代理的 Linux 上，当 go 客户端（http、grpc）尝试通过代理连接时，测试将失败。
 	os.Setenv("no_proxy", "localhost,127.0.0.1,0.0.0.0,:")
 
 	exitCode := m.Run()
@@ -246,6 +247,7 @@ func TestWALSegmentSizeBounds(t *testing.T) {
 func TestMaxBlockChunkSegmentSizeBounds(t *testing.T) {
 	t.Parallel()
 
+	// 判断是否短测试，这个单元测试比较耗时。
 	if testing.Short() {
 		t.Skip("skipping test in short mode.")
 	}
