@@ -36,7 +36,7 @@ require (
 	github.com/gophercloud/gophercloud v1.12.0
 	github.com/grafana/regexp v0.0.0-20240518133315-a468a5bfb3bc
 	github.com/grpc-ecosystem/grpc-gateway v1.16.0
-	github.com/hashicorp/consul/api v1.29.1
+	github.com/hashicorp/consul/api v1.29.4
 	github.com/hashicorp/nomad/api v0.0.0-20240604134157-e73d8bb1140d
 	github.com/hetznercloud/hcloud-go/v2 v2.9.0
 	github.com/ionos-cloud/sdk-go/v6 v6.1.11
